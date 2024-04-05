@@ -144,6 +144,8 @@ public class NetworkManager : MonoBehaviour
                 
                 //Update drone cluster message
                 case "UpdateGrid":
+                    
+                    Debug.Log(rawMessage);
                     //Deserialize
                     var updateGridMessage = JsonConvert.DeserializeObject<UpdateGridMessage>(rawMessage);
                     
