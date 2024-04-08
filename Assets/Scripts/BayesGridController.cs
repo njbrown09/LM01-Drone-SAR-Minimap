@@ -112,6 +112,7 @@ public class BayesGridController : MonoBehaviour
                     
                     float normalizedValue = (data[i][j] - minValue) / (maxValue - minValue); //(1f / 15f) * j;
                     Color cellColor = GetColorFromGradient(normalizedValue);
+                    cellColor.a = 0.6f;
                     
                     // Assuming the GridCellPrefab has an Image component
                     Image cellImage = cell.GetComponent<Image>();

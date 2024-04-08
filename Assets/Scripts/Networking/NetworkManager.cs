@@ -90,8 +90,6 @@ public class NetworkManager : MonoBehaviour
 
         websocket.OnMessage += (bytes) =>
         {
-            //Logging
-            Debug.Log("Received Message");
             
             //Deserialize the string from the bytes
             var rawMessage = Encoding.UTF8.GetString(bytes);
