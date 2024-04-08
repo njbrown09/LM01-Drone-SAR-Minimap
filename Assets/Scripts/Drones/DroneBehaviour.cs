@@ -64,7 +64,7 @@ public class DroneBehaviour : MonoBehaviour
 
         //Set text
         NameText.SetText(Name);
-        //AltitudeText.SetText("Altitude: " + (int)-Altitude + "m");
+        AltitudeText.SetText( + (int)-Altitude + "m");
     }
 
     public void UpdateState(float latitude, float longitude, float altitude, float velocity)
